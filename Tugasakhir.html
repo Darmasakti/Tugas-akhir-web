@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Konsep redesain situs HokBen: pesan bento hangat secara online dan temukan outlet terdekat.">
+  <title>HokBen – Bento Hangat, Antar Cepat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Tugasakhir.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container navbar">
+      <a class="logo" href="#top">
+        <span class="logo-mark">弁</span>HokBen
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#promo">Promo</a></li>
+          <li><a href="#pesan">Cara pesan</a></li>
+          <li><a href="#outlet">Outlet</a></li>
+        </ul>
+      </nav>
+
+      <button class="cart-btn" id="cart-button" type="button">
+        Keranjang <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Bagian Hero -->
+    <div class="hero">
+      <div class="hero-sun"></div>
+      <div class="container hero-inner">
+        <div>
+          <h1 class="hero-title">
+            <span>Bento hangat,</span>
+            <span class="hero-accent">sampai rumah</span>
+            <span>tetap hangat.</span>
+          </h1>
+          <p class="hero-lead">Nasi, ayam, dan lauk favorit ala Jepang yang disiapkan segar. Pilih menu, pesan online, kami antar ke pintu Anda.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#menu">Pesan sekarang</a>
+            <a class="btn btn-outline" href="#outlet">Cari outlet terdekat</a>
+          </div>
+          <div class="stats">
+            <div class="stat-item">
+              <strong>200+</strong>
+              <span>Outlet di Indonesia</span>
+            </div>
+            <div class="stat-item">
+              <strong>30 mnt</strong>
+              <span>Estimasi antar</span>
+            </div>
+            <div class="stat-item">
+              <strong>1-500-505</strong>
+              <span>Layanan pesan antar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <div class="steam"><i></i><i></i><i></i></div>
+          <div class="bento-box">
+            <div class="bento-cell">🍛</div>
+            <div class="bento-cell">🍗</div>
+            <div class="bento-cell">🥗</div>
+          </div>
+          <div class="hero-badge">Gratis<br>es teh<br>hari ini</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Teks berjalan -->
+    <div class="marquee">
+      <div class="marquee-track" id="marquee-track"></div>
+    </div>
+
+    <!-- Bagian Menu -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Menu favorit</h2>
+            <p class="section-sub">Pilih kategori, lalu tambahkan ke keranjang.</p>
+          </div>
+          <div class="tabs">
+            <button class="tab-btn active" data-filter="all" type="button">Semua</button>
+            <button class="tab-btn" data-filter="bento" type="button">Bento</button>
+            <button class="tab-btn" data-filter="ala" type="button">À la carte</button>
+            <button class="tab-btn" data-filter="minum" type="button">Minuman</button>
+          </div>
+        </div>
+        <div class="menu-grid" id="menu-grid"></div>
+        <p class="note">Harga di halaman ini hanya contoh untuk keperluan desain.</p>
+      </div>
+    </section>
+
+    <!-- Bagian Promo -->
+    <section class="section section-flush-top" id="promo">
+      <div class="container">
+        <div class="promo reveal">
+          <div>
+            <h2>Makan berdua, bayar lebih hemat</h2>
+            <p class="promo-text">Pesan 2 paket bento lewat aplikasi dan dapatkan potongan harga untuk pesanan pertama Anda.</p>
+            <button class="btn btn-dark" id="promo-apply" type="button">Pakai promo</button>
+          </div>
+          <div class="coupon">
+            <span>Diskon pesanan pertama</span>
+            <strong class="coupon-value">20%</strong>
+            <button class="coupon-code" id="coupon-code" type="button">HOKBENBARU</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Cara Pesan -->
+    <section class="section section-tight" id="pesan">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Tiga langkah, makan siap</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <h3>Pilih menu</h3>
+            <p>Telusuri bento, lauk, dan minuman, lalu masukkan ke keranjang.</p>
+          </li>
+          <li class="step reveal">
+            <h3>Tentukan alamat</h3>
+            <p>Masukkan lokasi Anda. Kami pilihkan outlet terdekat otomatis.</p>
+          </li>
+          <li class="step reveal">
+            <h3>Tunggu di rumah</h3>
+            <p>Kurir membawa pesanan Anda selagi masih hangat.</p>
+            <span class="step-rider">🛵💨</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Bagian Cari Outlet -->
+    <section class="section section-tight" id="outlet">
+      <div class="container">
+        <div class="outlet reveal">
+          <div>
+            <h2>Outlet terdekat</h2>
+            <p class="outlet-sub">Ketik nama kota atau kecamatan Anda.</p>
+          </div>
+          <form class="search" id="outlet-form">
+            <input class="search-input" id="outlet-query" type="search" placeholder="Contoh: Malang" autocomplete="off">
+            <button class="btn btn-small" type="submit">Cari</button>
+          </form>
+          <ul class="outlet-results" id="outlet-results"></ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong class="footer-brand">HokBen</strong><br>
+        Redesain konsep, bukan situs resmi.
+      </div>
+      <div>Layanan pesan antar: 1-500-505<br>Setiap hari, 10.00–22.00</div>
+    </div>
+  </footer>
+
+  <!-- Drawer Keranjang -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head">
+      <h2>Keranjang</h2>
+      <button class="drawer-close" id="drawer-close" type="button">×</button>
+    </div>
+
+    <ul class="drawer-list" id="cart-list"></ul>
+    <p class="drawer-empty" id="cart-empty">Keranjang masih kosong. Pilih menu favorit Anda dulu.</p>
+
+    <div class="drawer-foot" id="cart-foot">
+      <form class="voucher" id="voucher-form">
+        <input class="voucher-input" id="voucher-input" placeholder="Kode promo" autocomplete="off">
+        <button class="btn btn-small" type="submit">Pakai</button>
+      </form>
+      <p class="voucher-msg" id="voucher-message"></p>
+
+      <div class="summary">
+        <div class="summary-row"><span>Subtotal</span><span id="sum-subtotal">Rp0</span></div>
+        <div class="summary-row summary-discount" id="sum-discount-row" hidden><span>Diskon</span><span id="sum-discount">-Rp0</span></div>
+        <div class="summary-row summary-total"><span>Total</span><span id="sum-total">Rp0</span></div>
+      </div>
+      <button class="btn btn-block" id="checkout" type="button">Lanjut pesan</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="Tugasakhir.js"></script>
+</body>
+</html>
